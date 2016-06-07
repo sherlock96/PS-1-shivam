@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Test.MaterPage.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/UserControls/Header.ascx" TagName="header" TagPrefix="THeader" %>
+<%@ Register Src="~/UserControls/Footer.ascx" TagName="footer" TagPrefix="TFooter" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <THeader:header ID="headerMain" runat="server" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder_Main" runat="server">
+        </asp:ContentPlaceHolder>
+        <TFooter:footer ID="footerMain" runat="server" />
+    </div>
+    </form>
+</body>
+</html>
