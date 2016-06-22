@@ -1,0 +1,186 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminPage.aspx.cs" Inherits="Revide.WebForm1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title> ADMIN PAGE      
+    </title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+               
+    
+        body
+        {
+            position: relative;
+        }
+        
+        .affix
+        {
+            top: 190px;
+            position: fixed;
+        }
+    
+    .offer-box {
+    background: #f4e759;
+    height: 100px;
+    border-radius: 8px;
+}
+.offer-box h1 {
+    color: #080808;
+}
+.offer-box p {
+    color: #080808;
+    font-size: 1.5em;
+} 
+    lblcount
+    {
+    lblcount.Text =10;
+    }
+    
+    
+    #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}
+  #section43 {color: #fff; background-color: #ff9800;}
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42, #section43  {
+        margin-left: 150px;
+    }
+  }
+    
+    
+    
+    </style>
+
+</head>
+<body>
+   
+      
+    <br />
+    <div class="panel panel-default" >
+  <div class="panel-heading">Dashboard</div>
+  </div>
+
+
+  <div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2>Revide</h2>
+      <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#section1">End Users</a></li>
+        <li><a href="#section2">Users</a></li>
+        <li><a href="#section3">All videos</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> All videos <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Section 4-1</a></li>
+            <li><a href="#section42">Section 4-2</a></li>
+            <li><a href="#section43">Section 4-3</a></li>
+      </ul><br>
+    </div>
+    <br>
+    
+    <div class="col-sm-9">
+      <div class="well">
+        <h4>Dashboard</h4>
+        <p>Some text..</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Registered Users</h4>
+            <p>1 Million</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Active Users</h4>
+            <p>100 Million</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Total Videos</h4>
+            <p>10 Million</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Bounce</h4>
+            <p>30%</p>
+          </div>
+        </div>
+      </div>         
+        
+     
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<br /><br />   
+   
+</div>
+</div>
+
+
+<br /><br /><br /><br />
+ 
+ <div class="container" >
+  <div class="row" >
+    <nav class="col-sm-3" id="myScrollspy" style="alignleft:10px">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">End Users</a></li>
+        <li><a href="#section2">Users</a></li>
+        <li><a href="#section3">All videos</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> All videos <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Section 4-1</a></li>
+            <li><a href="#section42">Section 4-2</a></li>
+            <li><a href="#section43">Section 4-3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">
+        <h1>End Users</h1>
+        <p>List of all the users <br /><br /><br /><br /></p>
+      </div>
+      <div id="section2">
+        <h1>Users</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!<br /><br /><br /><br /></p>
+      </div>
+      <div id="section3">
+        <h1>All videos</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!<br /><br /><br /><br /></p>
+      </div>
+      <div id="section41">
+        <h1>Movies</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!<br /><br /><br /><br /></p>
+      </div>
+      <div id="section42">
+        <h1>Web Series</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!<br /><br /><br /><br /></p>
+      </div>
+      <div id="section43">
+        <h1>Videos</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!<br /><br /><br /><br /></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
